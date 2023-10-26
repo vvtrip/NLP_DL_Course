@@ -33,7 +33,6 @@ def CountVectorization(*args):
   vectorizer = CountVectorizer()
   X = vectorizer.fit_transform(corpus)
 
-  print('FEATURES ARE', vectorizer.get_feature_names_out())
   return  X.toarray()
 
 def TFIDFVectorization(*args):
@@ -45,5 +44,4 @@ def TFIDFVectorization(*args):
   vectorizer = TfidfVectorizer()
   X = vectorizer.fit_transform(corpus)
 
-  print('FEATURES ARE', vectorizer.get_feature_names_out())
   return  X.toarray()
